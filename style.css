@@ -1,0 +1,791 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-family: 'Mukta', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+
+    width: 100%;
+    height: 8vh;
+
+    background-color: #191919;
+    z-index: 2;
+
+    border-bottom: 2px solid rgb(63, 58, 58);
+}
+
+header h1{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #01fe87;
+    
+
+
+    width: 30%;
+    height: inherit;
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+nav{ 
+    float: left;
+    width: 40%;
+    height: inherit;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: 0.6s;
+}
+
+nav ul li a:hover{
+    color: black;
+    background-color: white;
+    padding-right: 30px;
+    text-align: center;
+    border: 3px solid #01fe87;
+
+}
+
+nav ul .active{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+.btns{
+    float: left;
+    width: 30%;
+    height: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.btns ul li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.btns ul li button{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    transition: 0.6s;
+}
+
+.btns button:hover{
+    font-size: 12px;
+}
+
+.btn-green {
+    background-color: #01fe87;
+}
+
+.btns ul li .btn-green:hover{
+    color: green;
+    background-color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+
+}
+
+.btns .btna {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+
+
+
+.content{
+    position: relative;
+    top: 8vh;
+    left: 0;
+}
+
+
+/* homepage */
+.homepage{
+    width: 100%;
+    height: calc(100vh - 8vh);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.homepage .image{
+    padding: 0%  5%;
+
+    position: relative;
+    animation: righttoleft 3s alternate;
+    animation-delay: 2s;
+}
+@keyframes righttoleft {
+    from{
+        right: 200px;
+    }
+    to{
+        right: 0px;
+    }
+}
+
+
+.homepage .text {
+    padding: 0% 5%;
+    letter-spacing: 5px;
+
+    /* animation */
+    position: relative;
+    animation: leftoright 3s alternate;
+    animation-delay: 2s;
+}
+
+@keyframes leftoright {
+    from{
+        left: 200px;
+    }
+    to{
+        left: 0px;
+    }
+}
+
+.blue{
+    color: blue;
+}
+
+.red{
+    color: red;
+}
+
+
+.text ul{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.text ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 50px;
+}
+
+.text ul li a{
+    font-size: 30px;
+
+    transition: font-size 0.3s;
+}
+
+.text ul li a:hover {
+    font-size: 24px;
+}
+
+.aboutpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    background-color: #191919;
+    padding-right: 100px;
+}
+
+.aboutpage h2{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    color: #191919;
+    -webkit-text-stroke: 2px #191919;
+    text-transform: capitalize;
+    letter-spacing: 20px;
+}
+
+.aboutpage h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke: 0px #191919;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0%, 10%, 100%
+    {
+        width: 0;
+    }
+    70%, 90%
+    {
+        width: 100%;
+    }
+}
+
+.aboutpage2{
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    padding-bottom:  100px;
+
+    color: white;
+    background-color: #191919;
+}
+
+
+
+.timeline {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after{
+    content: ' ';
+    position: absolute;
+    width: 6px;
+    background-color: #01fe87;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline .container{
+    padding: 30px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #01fe87;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.right{
+    left: 50%;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.right::after{
+    left: -16px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .aboutpage2{
+        height: auto;
+    }
+
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+}
+
+.lefts{
+    animation: about_animateA 6s normal; 
+}
+
+@keyframes about_animateA {
+    from{
+        left: -100px;
+    }
+    to{
+        left: 0px;
+    }
+}
+
+.rights{
+    animation: about_animateB 6s normal;
+}
+
+@keyframes about_animateB {
+    from{
+        left: 200px;
+    }
+    to{
+        left: 0px;
+    }
+}
+
+.contents {
+    padding: 20px 28px;
+    position: relative;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.contents img{
+    width: 400px;
+    height: 200px;
+}
+
+.contents h1{
+    color: #01fe87;
+}
+
+/* footer */
+.footer{
+    text-align: center;
+    padding: 10px 0px;
+    background-color: #191919;
+    border-top: 2px solid rgb(63, 58, 58);
+    color: white;
+   
+}
+
+.green{
+    color: #01fe87;
+    font-size: 30px;
+}
+
+.footer a{
+    display: block;
+    color: lightblue;
+}
+
+.footer a:hover{
+    color: blue;
+    text-decoration: none;
+}
+
+
+/* works page */
+.workspage{
+
+    width: 100%;
+    height: auto;
+
+
+    background-color: white;
+}
+
+.workscontent .workintro{
+    width: 100%;
+    padding: 20px 20%;
+    color: #191919;
+}
+
+.workintro img{
+    max-width: 1200px;
+
+}
+
+.workintro h2{
+    font-size: 40px;
+    text-decoration: overline #191919;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.workintro p{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 50px;
+}
+
+.slideshow-container{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides{
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: -60px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(235, 225, 225, 0.8);
+}
+
+/* Caption text */
+.texts {
+    color: black;
+    font-weight: 800;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #01fe87;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: white;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+.hireme-modal{
+    display: none;
+    position: fixed;
+    z-index: 5;
+    padding-top: 200px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: none;
+    background-color: rgb(49, 43, 43, 0.6);
+}
+
+.modal-content{
+    background-color: #191919;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 30%;
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content form{
+    padding-top: 10px;
+    color: #01fe87;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.modal-content input{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.modal-content input[type='email'], input[type='text']{
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.modal-content h2{
+    font-size: 30px;
+    color: #01fe87;
+    text-decoration: overline;
+}
+
+.modal-content form textarea{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.modal-content input[type='submit']{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #191919;
+    background-color: white;
+    cursor: pointer;
+}
+
+.modal-content input[type='submit']:hover{
+    background-color: #191919;
+    color: white;
+    border: 2px solid #01fe87;
+}
+
+
+.content .skillspage{
+    width: 100%;
+    height: calc(100vh - 23.5vh);
+    background-color: #191919;
+    color: white;
+
+    padding: 0% 20%;
+    padding-top: 100px;
+}
+
+.skillspage h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #01fe87;
+    text-decoration: overline;
+    text-transform: uppercase;
+}
+
+.skillcontainer{
+    width: 100%;
+    background-color: white;
+
+}
+
+.skills{
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #000;
+    font-weight: 600;
+}
+
+.skillspage p{
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.html{
+    width: 85%;
+    background-color: #01fe87;
+    animation: html 6s normal;
+}
+
+.css{
+    width: 80%;
+    background-color: aqua;
+    animation: css 6s normal;
+}
+
+.js{
+    width: 65%;
+    background-color: yellow;
+    animation: js 6s normal;
+}
+
+.python{
+    width: 45%;
+    background-color: yellowgreen;
+    animation: python 6s normal;
+}
+
+
+@keyframes html{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 85%;
+    }
+}
+
+@keyframes css {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes js {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 65%;
+    }
+}
+
+@keyframes python {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 45%;
+    }
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works - Jayde Mike Engracia</title>
+
+    <!-- link to css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <header id="header" class="black">
+        <h1>Jayde's PortFolio</h1>
+
+        <nav>
+            <!-- left navbar -->
+            <ul>
+                <!-- nav bar -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="works.html" class="active">Works</a></li>
+                <li><a href="skills.html">Skills</a></li>
+            </ul>
+        </nav>
+
+        <div class="btns">
+            <ul>
+                <!-- right navbar -->
+                <li><button class="btn-green" id="btn">Hire Me!</button></li>
+            </ul>
+            <div class="hireme-modal" id="modal">
+            
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+            
+                    <h2>Hire Me Here!</h2>
+            
+                    <form>
+            
+                        <label for="name">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Ex. company@email.com">
+            
+                        <label for="position">Offer Position</label>
+                        <input type="text" name="position" id="position" placeholder="Ex. Software Engineer">
+            
+                        <label for="expectpay">Expected Payment</label>
+                        <input type="text" name="expectpay" id="expectpay" placeholder="Ex. 10/hr or 00xxx monthly">
+            
+                        <label for="message">Message</label>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+            
+                        <input type="submit" name="submit" id="submit">
+            
+                    </form>
+            
+                </div>
+            
+            
+            
+            </div>
+            
+            <script src="javascript/modal.js"></script>
+
+        </div>
+
+    </header>
+
+        <!-- works page -->
+
+<div class="content">
+
+<div class="workspage">
+
+    <div class="workscontent">
+        <div class="workintro">
+            <h2>AnimeGO</h2>
+
+            <!-- slideshows -->
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                    <div class="numbertext">Web Version</div>
+                    <img src="images/animego.png"  alt="">
+                    <div class="texts">Homepage</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">Web Version</div>
+                    <img src="images/explorepage.png" alt="">
+                    <div class="texts">Explore Page</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">Web Version</div>
+                    <img src="images/request.png" alt="">
+                    <div class="texts">Request Anime</div>
+                </div>
+
+            <div class="mySlides">
+                <div class="numbertext">Mobile Version</div>
+                <img src="images/mobileexplore.png" height="500px" width="1200px" alt="">
+                <div class="texts">Explore Page</div>
+            </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+
+            </div>
+            <!-- script -->
+            <script src="javascript/slideshow1.js"></script>
+            <p>AnimeGO is an anime entertainment website where you can watch anime series and movies for free.</p>
+            
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+
+        <h2 class="green">Contact Me Here!</h2>
+        <a href="tel:+639369580135">+63 9369-580-135</a>
+        <a href="mailto:jadeengracia00@gmail.com">jadeengracia00@gmail.com</a>
+
+
+        <h4>Copyright &copy;2022 </h4>
+
+    </div>
+
+</div>
+
+
+
+
+</div>
+
+    
+
+
+
+
+
+
+</body>
+
+</html>
